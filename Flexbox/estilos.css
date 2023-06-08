@@ -1,0 +1,343 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	body {
+		font-family: 'Open Sans', sans-serif;
+		background: #000 url('imagenes/fondo.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	
+	.contenedor {
+		margin: auto;
+		width: 90%;
+		max-width: 1000px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	header {
+		width: 100%;
+		padding: 50px 0;
+	
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	header .menu a {
+		color: #fff;
+		text-decoration: none;
+		margin-right: 40px;
+		font-size: 18px;
+	}
+	
+	header .menu a:hover {
+		text-decoration: underline;
+	}
+	
+	.main {
+		background: #fff;
+		padding: 20px;
+		width: 70%;
+	}
+	
+	.main article .thumb {
+		margin-bottom: 20px;
+	}
+	
+	.main article .thumb img {
+		vertical-align: top;
+		width: 100%;
+	}
+	
+	.main article h2 {
+		margin-bottom: 20px;
+		font-weight: normal;
+		font-size: 32px;
+	}
+	
+	.main article p {
+		margin-bottom: 20px;
+		font-size: 14px;
+		line-height: 27px;
+	}
+	
+	aside {
+		width: 30%;
+		background: #537dca;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	
+	aside .ad {
+		font-size: 30px;
+		text-align: center;
+		color: #fff;
+		padding: 50px 0;
+		/*margin: 20px 0;*/
+		background: #4264a2;
+	}
+	
+	footer {
+		margin-top: 20px;
+		background: rgba(255, 255, 255, .2);
+		padding: 20px;
+		margin-bottom: 20px;
+		width: 100%;
+		color: #fff;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: no-wrap;
+		justify-content: space-between;
+	}
+	
+	footer .redes-sociales a {
+		color: #fff;
+		text-decoration: underline;
+		margin-left: 20px;
+	}
+	
+	footer .redes-sociales a:hover {
+		text-decoration: none;
+	}
+	
+	@media screen and (max-width: 800px) {
+		.main {
+			width: 100%;
+		}
+	
+		aside {
+			width: 100%;
+			flex-direction: row;
+		}
+	
+		aside .ad {
+			width: 40%;
+		}
+	}
+	
+	@media screen and (max-width: 600px) {
+		header {
+			flex-direction: column;
+			padding-bottom: 20px;
+		}
+	
+		header .menu {
+			width: 100%;
+			background: rgba(255, 255, 255, .2);
+			text-align: center;
+			padding: 20px;
+		}
+	
+		header .logo {
+			margin-bottom: 20px;
+		}
+	
+		header .menu a {
+			margin: 0 20px;
+		}
+	
+		footer {
+			flex-direction: column;
+			text-align: center;
+		}
+	
+		footer .autor {
+			order: 2;
+		}
+	
+		footer .redes-sociales {
+			order: 1;
+			margin-bottom: 20px;
+		}
+	}
+	
+	@media screen and (max-width: 400px) {
+		aside {
+			display: none;
+		}
+	}
+	
+	
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+	
+	:root {
+		--login-bg: #f8f3ff;
+		--title-bg: black;
+		--button-bg: black;
+		--light-pink: blue;
+		--image-bg: #eadbff;
+	}
+	
+	
+	.login-container {
+		height: 43.75em;
+		width: 60em;
+		margin: 6em auto;
+		border-radius: 10px;
+		display: flex;
+		justify-content: space-between;
+		overflow: hidden;
+	}
+	
+	.login-info-container {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding-top: 0.5rem;
+		background-color: var(--login-bg);
+	}
+	
+	.image-container {
+		padding: 2rem;
+		width: 50%;
+		background-color: var(--image-bg);
+		box-sizing: border-box;
+	}
+	
+	.title {
+		text-transform: capitalize;
+		font-size: 2.25rem;
+		font-weight: 600;
+		letter-spacing: 1px;
+		color: var(--title-bg);
+	}
+	
+	.social-login {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		cursor: pointer;
+	}
+	
+	.social-login-element {
+		width: 12.5rem;
+		height: 3.75rem;
+		font-size: 1.2rem;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+		border-radius: 5px;
+		border: 1px solid var(--button-bg);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.social-login-element img {
+		width: 1.875rem;
+		height: 1.875rem;
+		position: relative;
+		top: 0;
+		left: -0.625rem;
+	}
+	
+	.social-login-element:hover {
+		background-color: #fff;
+	}
+	
+	.login-info-container>p {
+		font-size: 1.25em;
+		margin-top: 1.5em;
+	}
+	
+	.inputs-container {
+		height: 55%;
+		width: 85%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	.input,
+	.btn {
+		width: 90%;
+		height: 3.125rem;
+		font-size: 1em;
+	}
+	
+	.input {
+		padding-left: 20px;
+		border: none;
+		border-radius: 5px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		box-sizing: border-box;
+	}
+	
+	.input:hover {
+		border: 2px solid var(--button-bg);
+	}
+	
+	.btn {
+		width: 80%;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		background-color: var(--button-bg);
+		cursor: pointer;
+	}
+	
+	.inputs-container p {
+		margin: 0;
+	}
+	
+	.span {
+		color: var(--light-pink);
+		font-weight: 600;
+		cursor: pointer;
+	}
+	
+	@media screen and (max-width: 1000px) {
+		.login-container {
+			width: 70%;
+			margin-top: 3rem;
+		}
+	
+		.login-info-container {
+			width: 100%;
+			border-radius: 5px;
+		}
+	
+		.image-container {
+			display: none;
+		}
+	}
+	
+	@media screen and (max-width: 650px) {
+		.login-container {
+			width: 90%;
+		}
+	}
+	
+	@media screen and (max-width: 500px) {
+		.login-container {
+			height: 90%;
+		}
+	
+		.social-login {
+			flex-direction: column;
+			align-items: center;
+			height: 30%;
+		}
+	
+		.login-info-container>p {
+			margin: 0;
+		}
+	}
